@@ -27,6 +27,9 @@
   changed_when: false
   ignore_errors: yes
 
+- debug:
+    msg: "{{ elastalert_index_result }}"
+
 - name: Create index
   shell: >
     source ./venv/bin/activate &&
@@ -37,7 +40,7 @@
   args:
     chdir: "{{ elastalert_venv_rootdir }}"
     executable: /bin/bash
-  when: elastalert_index_result|failed
+  when: elastalert_index_result.failed == true
   become_user: "{{ elastalert_user }}"
   become: yes
 

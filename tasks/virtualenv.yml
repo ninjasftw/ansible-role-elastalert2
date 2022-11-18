@@ -20,7 +20,7 @@
 
 - name: Install elastalert into virtualenv
   pip:
-    name: elastalert
+    name: elastalert2
     version: "{{ elastalert_version }}"
     virtualenv: "{{ elastalert_venv_rootdir }}/venv"
     virtualenv_python: "{{ elastalert_venv_python }}"

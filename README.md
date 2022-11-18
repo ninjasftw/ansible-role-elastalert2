@@ -1,8 +1,7 @@
-freedomofpress.elastalert
+ninjasftw2.elastalert2
 =========================
-[![Build Status](https://circleci.com/gh/freedomofpress/ansible-role-elastalert/tree/master.svg?style=shield&circle-token=3501da547351c9998213598b4c91c73f24815261)](https://circleci.com/gh/freedomofpress/ansible-role-elastalert)
 
-Installs [Elastalert](https://github.com/Yelp/elastalert) along with relative alert configuration defined by user.
+Installs [Elastalert2](https://github.com/jertel/elastalert2) along with relative alert configuration defined by user.
 
 Role Variables
 --------------
@@ -41,7 +40,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - role: freedomofpress.elastalert
+         - role: ninjasftw.elastalert2
 
 License
 -------
